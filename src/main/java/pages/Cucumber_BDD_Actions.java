@@ -11,8 +11,6 @@ public class Cucumber_BDD_Actions {
 	SoftAssert softAssert = new SoftAssert();
 
 	public void launchBrowser(){
-//		System.setProperty("webdriver.chrome.logfile", "D:\\chromedriver.log");
-//		System.setProperty("webdriver.chrome.verboseLogging", "true");
 		driver = new ChromeDriver();
 	}
 	

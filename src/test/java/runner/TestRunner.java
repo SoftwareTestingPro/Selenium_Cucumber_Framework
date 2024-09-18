@@ -8,7 +8,7 @@ import org.testng.annotations.AfterSuite;
 
 @CucumberOptions(features = "src/test/resources/features",
         glue = {"com.qa.mystepdefs"},
-        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"},
+        plugin = {"pretty", "html:target/cucumber-reports/Cucumber.html", "json:target/cucumber-reports/cucumber.json", "junit:target/cucumber-reports/Cucumber.xml", "timeline:target/cucumber-reports/CucumberTimeline"},
         monochrome = true,
         publish = true)
 public class TestRunner extends AbstractTestNGCucumberTests {

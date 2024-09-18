@@ -3,7 +3,7 @@ Feature: This feature file demonstrates the examples
 @BrowserLaunchTest
 Scenario: This scenario launches a browser, hits a url and closes 
 	Given I launch browser
-	When I launch url "https://www.google.com"
+	When I launch url "https://softwaretestingpro.github.io/index.html"
 	Then I close browser
 	
 @AddNumbersTest
@@ -23,8 +23,8 @@ Scenario Outline: This scenario can test multiple test data without repeating th
 	Given I verify sum of <num1> with <num2> is <sum> via hard assert
 
     Examples:
-      | num1	| num2  |	sum	|
-      | 1			| 1 		|	2		|
-      | 2			|	2			|	2		|
-      | 3			|	3			|	6		|
-      | 4			|	4			|	6		|
+		| num1 | num2 | sum |
+		| 1    | 1    | 2   |
+		| 2    | 2    | 2   |
+		| 3    | 3    | 6   |
+		| 4    | 4    | 6   |
